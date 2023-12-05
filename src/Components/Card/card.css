@@ -1,0 +1,31 @@
+.Card {
+
+    height: 250px;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    flex-direction: column;
+    background-color: grey;
+    border: 12px ridge #966F33;
+
+}
+
+img {
+
+    object-fit: cover;
+    height: 85%;
+}
+
+.characterName {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    height: 15%;
+    color: black;
+    font-size: 1.1rem;
+    border-top: 2px solid black;
+    background-color: #1FA055;
+}

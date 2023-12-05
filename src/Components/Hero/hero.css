@@ -1,0 +1,12 @@
+
+.Hero{
+
+color: snow;
+
+background-image: url("../../Assets/salle-de-classe.jpg");
+height: 450px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}

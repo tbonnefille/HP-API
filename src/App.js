@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from './Components/Header/Header';
+import Hero from './Components/Hero/Hero';
+import Home from './Containers/Home/Home';
+import Gryffindor from './Containers/Gryffindor/Gryffindor';
+import Ravenclaw from './Containers/Ravenclaw/Ravenclaw';
+import Slytherin from './Containers/Slytherin/Slytherin';
+import Hufflepuff from './Containers/Hufflepuff/Hufflepuff';
+import Footer from './Components/Footer/Footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <div className="App">
+          <Header />
+          <Hero />
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/gryffindor" element={<Gryffindor/>}/>
+            <Route path="/ravenclaw" element={<Ravenclaw/>}/>
+            <Route path="/slytherin" element={<Slytherin/>}/>
+            <Route path="/hufflepuff" element={<Hufflepuff/>}/>
+          </Routes>  
+          <Footer />      
+				</div>
+      </BrowserRouter>
   );
-}
-
+  }
 export default App;
