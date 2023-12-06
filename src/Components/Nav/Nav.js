@@ -11,6 +11,7 @@ function Nav() {
             <Link className="menu" to="/slytherin">Slytherin</Link>
             <Link className="menu" to="/hufflepuff">Hufflepuff</Link>
             <Link className="menu" to="/ravenclaw">Ravenclaw</Link>
+            <Link className="menu" to="/spells">Spells</Link>
             HARRY POTTER
             <Link className="menu" to="/">Home</Link>
 

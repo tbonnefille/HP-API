@@ -6,8 +6,6 @@ import { useState, useEffect } from "react";
 
 function Slytherin() {
 
-
-
   const [data, setData] = useState([]);
 
   useEffect(() => {

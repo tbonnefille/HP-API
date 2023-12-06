@@ -1,7 +1,8 @@
 .Ravenclaw {
 
-    color: aliceblue;
+    color: #bebebe;
     text-align: center;
     background-color: #0e1a40;
-    border: ridge 10px #bebebe;
+    border: ridge 15px #bebebe;
+    margin: 10px;
 }

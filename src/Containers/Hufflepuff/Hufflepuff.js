@@ -6,8 +6,6 @@ import { useState, useEffect } from "react";
 
 function Hufflepuff() {
 
-
-
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -22,27 +20,25 @@ function Hufflepuff() {
     fetchtheData();
   }, []);
 
-  console.log(data);
-
 
   return (
     <div className="Hufflepuff">
-      
+
       <div className="houseName">Hufflepuff</div>
 
-<div className="cardholder">
+      <div className="cardholder">
 
 
-      {data.length === 0 ? (
-        <span class="loader"></span>
-      ) : (
-        data.map((character) => {
-          return <div>{<Card character={character} />}</div>;
-        })
-      )}
+        {data.length === 0 ? (
+          <span class="loader"></span>
+        ) : (
+          data.map((character) => {
+            return <div>{<Card character={character} />}</div>;
+          })
+        )}
+      </div>
+
     </div>
-
-</div>
 
   );
 }

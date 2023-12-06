@@ -1,17 +1,19 @@
-import "./ravenclaw.css";
+import "./spells.css";
 
-import Card from "../../Components/Card/Card";
+import SpellCard from "../../Components/SpellCard/SpellCard";
 import { useState, useEffect } from "react";
 
 
-function Ravenclaw() {
+function Spells() {
+
+
 
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchtheData = async () => {
       const response = await fetch(
-        "https://hp-api.onrender.com/api/characters/house/ravenclaw"
+        "https://hp-api.onrender.com/api/spells"
       );
       const responseApi = await response.json();
       setData(responseApi);
@@ -20,20 +22,22 @@ function Ravenclaw() {
     fetchtheData();
   }, []);
 
-  
-  return (
-    <div className="Ravenclaw">
-      
-      <div className="houseName">Ravenclaw</div>
+  console.log(data);
 
-<div className="cardholder">
+
+  return (
+    <div className="Spells">
+      
+      <div className="houseName">Spells</div>
+
+<div className="spellHolder">
 
 
       {data.length === 0 ? (
         <span class="loader"></span>
       ) : (
-        data.map((character) => {
-          return <div>{<Card character={character} />}</div>;
+        data.map((spell) => {
+          return <div>{<SpellCard spell={spell} />}</div>;
         })
       )}
     </div>
@@ -42,4 +46,4 @@ function Ravenclaw() {
 
   );
 }
-export default Ravenclaw;
+export default Spells;

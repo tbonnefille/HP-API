@@ -1,0 +1,19 @@
+.Spells {
+
+    color:	#ffd7a7;
+    font-weight: 900;
+    text-align: center;
+    background-color: #022545;
+    border: thick double #ffd7a7 ;
+    margin: 10px;
+}
+
+.spellHolder {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5px;
+ 
+}

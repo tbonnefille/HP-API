@@ -4,9 +4,12 @@
 color: snow;
 
 background-image: url("../../Assets/salle-de-classe.jpg");
-height: 450px;
-
+background-position: center;
+background-repeat: no-repeat;
+height: 500px;
 display: flex;
 justify-content: center;
 align-items: center;
+font-size: 4rem;
+border-bottom: 1px solid aliceblue;
 }

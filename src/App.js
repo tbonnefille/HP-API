@@ -10,6 +10,7 @@ import Gryffindor from './Containers/Gryffindor/Gryffindor';
 import Ravenclaw from './Containers/Ravenclaw/Ravenclaw';
 import Slytherin from './Containers/Slytherin/Slytherin';
 import Hufflepuff from './Containers/Hufflepuff/Hufflepuff';
+import Spells from './Containers/Spells/Spells';
 import Footer from './Components/Footer/Footer';
 
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="/ravenclaw" element={<Ravenclaw/>}/>
             <Route path="/slytherin" element={<Slytherin/>}/>
             <Route path="/hufflepuff" element={<Hufflepuff/>}/>
+            <Route path="/spells" element={<Spells/>}/>
           </Routes>  
           <Footer />      
 				</div>

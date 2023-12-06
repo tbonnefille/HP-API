@@ -1,7 +1,8 @@
 .Hufflepuff {
 
-    color: black;
+    color: #372e29;
     text-align: center;
     background-color: #ecb939;
-    border: ridge 10px #372e29;
+    border: ridge 15px #726255;
+    margin: 10px;
 }

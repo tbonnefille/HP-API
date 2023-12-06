@@ -1,0 +1,52 @@
+.Home {
+
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+.homeWrapper {
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+.picHolder {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+
+
+.housePic {
+
+    object-fit: cover;
+
+    height: 200px;
+    width: 150px;
+
+
+}
+
+
+.presentation {
+
+
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 70%;
+}
