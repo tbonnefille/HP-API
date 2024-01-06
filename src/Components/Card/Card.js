@@ -12,9 +12,7 @@ function Card(props) {
 
       {modal && (
 
-
         <div className="modal"
-
 
           onClick={() => {
             setModal(false)
@@ -27,7 +25,7 @@ function Card(props) {
 
             <div className="bioPicHolder">
 
-<h1>Biography</h1>
+              <h1>Biography</h1>
 
               <img className="bioPic" src={props.character.image} />
             </div>
@@ -42,12 +40,11 @@ function Card(props) {
               <div className="dataCat">
                 <div className="tag"> Ancestry : </div>
                 <div className="tagInfo">{props.character.ancestry} </div>
-
               </div>
 
               <div className="dataCat">
-                <div className="tag"> date of birth : </div>
-                <div className="tagInfo">{props.character.dateOfBirth}</div>
+                <div className="tag">House : </div>
+                <div className="tagInfo">  {props.character.house} </div>
               </div>
 
               <div className="dataCat">
@@ -79,19 +76,19 @@ function Card(props) {
               </div>
 
               <div className="dataCat">
-                <div className="tag">House : </div>
-                <div className="tagInfo">  {props.character.house} </div>
-              </div>
-
-              <div className="dataCat">
                 <div className="tag">Actor : </div>
                 <div className="tagInfo">{props.character.actor} </div>
               </div>
 
+              <div className="dataCat">
+                <div className="tag"> date of birth : </div>
+                <div className="tagInfo">{props.character.dateOfBirth}</div>
+              </div>
+
+
             </div>
 
           </div>
-
 
 
         </div>
