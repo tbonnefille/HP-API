@@ -1,5 +1,6 @@
 import "./nav.css";
-import { Link } from "react-router-dom";
+
+import { NavLink } from "react-router-dom";
 
 
 function Nav() {
@@ -7,13 +8,13 @@ function Nav() {
     return (
         <div className="Nav">
 
-            <Link className="menu" to="/gryffindor">Gryffindor</Link>
-            <Link className="menu" to="/slytherin">Slytherin</Link>
-            <Link className="menu" to="/hufflepuff">Hufflepuff</Link>
-            <Link className="menu" to="/ravenclaw">Ravenclaw</Link>
-            <Link className="menu" to="/spells">Spells</Link>
+            <NavLink className="menu gryLink" to="/gryffindor">Gryffindor</NavLink>
+            <NavLink className="menu slyLink" to="/slytherin">Slytherin</NavLink>
+            <NavLink className="menu hufLink" to="/hufflepuff">Hufflepuff</NavLink>
+            <NavLink className="menu ravLink" to="/ravenclaw">Ravenclaw</NavLink>
+            <NavLink className="menu speLink" to="/spells">Spells</NavLink>
             HARRY POTTER
-            <Link className="menu" to="/">Home</Link>
+            <NavLink className="menu" to="/">Home</NavLink>
 
         </div>
     );

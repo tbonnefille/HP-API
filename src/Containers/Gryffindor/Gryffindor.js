@@ -1,6 +1,8 @@
 import "./gryffindor.css";
 
-import Card2 from "../../Components/Card/Card";
+
+
+import Card from "../../Components/Card/Card";
 import { useState, useEffect } from "react";
 
 
@@ -20,6 +22,7 @@ function Gryffindor() {
     fetchtheData();
   }, []);
 
+//onsole.log(data);
 
   return (
     <div className="Gryffindor">
@@ -30,10 +33,10 @@ function Gryffindor() {
 
 
         {data.length === 0 ? (
-          <span class="loader"></span>
+         <div>RIEN</div>
         ) : (
-          data.map((character) => {
-            return <div>{<Card2 character={character} />}</div>;
+          data.map((character, i) => {
+            return <div key={i}>{<Card character={character} />}</div>;
           })
         )}
       </div>

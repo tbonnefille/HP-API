@@ -30,10 +30,10 @@ function Ravenclaw() {
 
 
       {data.length === 0 ? (
-        <span class="loader"></span>
+       <div>RIEN</div>
       ) : (
-        data.map((character) => {
-          return <div>{<Card character={character} />}</div>;
+        data.map((character, i) => {
+          return <div key={i}>{<Card character={character} />}</div>;
         })
       )}
     </div>

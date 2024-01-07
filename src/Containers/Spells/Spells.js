@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 function Spells() {
 
 
-
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -22,7 +21,7 @@ function Spells() {
     fetchtheData();
   }, []);
 
-  console.log(data);
+ // console.log(data);
 
 
   return (
@@ -34,10 +33,10 @@ function Spells() {
 
 
       {data.length === 0 ? (
-        <span class="loader"></span>
+       <div>RIEN</div>
       ) : (
-        data.map((spell) => {
-          return <div>{<SpellCard spell={spell} />}</div>;
+        data.map((spell, i) => {
+          return <div key={i}>{<SpellCard spell={spell} />}</div>;
         })
       )}
     </div>

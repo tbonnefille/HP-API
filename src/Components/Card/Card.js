@@ -2,9 +2,27 @@ import "./card.css";
 import { useState } from "react";
 
 
+
+import empty from "../../Assets/No-Image.png"
+
 function Card(props) {
 
   const [modal, setModal] = useState(false);
+
+  let portrait;
+
+
+  if (! `${props.character.image}`) {
+
+    portrait = <img src={empty} alt="empty" />
+
+
+  } else {
+
+    portrait = <img src={props.character.image} alt={props.character.name} />;
+
+  };
+  
 
   return (
 
@@ -21,13 +39,17 @@ function Card(props) {
 
         >
 
+
+
+
           <div className="bio">
 
             <div className="bioPicHolder">
 
               <h1>Biography</h1>
 
-              <img className="bioPic" src={props.character.image} />
+              <div className="bioPic" > {portrait} </div>
+
             </div>
 
             <div className="datas">
@@ -106,10 +128,11 @@ function Card(props) {
 
       >
 
-        <img src={props.character.image} />
+        {portrait}
+
+
 
         <div className="characterName">{props.character.name}</div>
-
 
       </div>
 

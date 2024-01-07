@@ -8,13 +8,30 @@
     flex-direction: column;
     background-color: darkgrey;
     border: 12px ridge #966F33;
+    transition: all .1s ease-in-out;
 
 }
 
-img {
+
+.Card:hover {
+
+    transform: scale(1.075);
+
+}
+
+.Card img {
 
     object-fit: cover;
     height: 85%;
+
+}
+
+.bioPic img {
+
+    object-fit: cover;
+    
+   height: 350px;
+   
 }
 
 .characterName {
@@ -44,7 +61,7 @@ img {
     top: 0;
     left: 0;
     background-color: rgb(1, 1, 1, 0.7);
-   
+
 }
 
 .bio {
@@ -53,7 +70,7 @@ img {
     justify-content: space-around;
     background-color: #022545;
 
-    
+
     color: black;
     border: 5px solid #966F33;
     height: 550px;
@@ -67,10 +84,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-flex-direction: column;
-color: #ffd7a7;
-    margin: 10px;
+    color: aliceblue;
+    flex-direction: column;
+   
 
 }
 
@@ -79,8 +95,11 @@ color: #ffd7a7;
 
 .bioPic {
 
-    object-fit: cover;
+    
     border: 15px ridge #966F33;
+   height: 350px;
+   
+    
 }
 
 
@@ -94,9 +113,9 @@ color: #ffd7a7;
 
     padding: 10px;
 
-    border:thick double;
+    border: thick double;
     margin: 10px;
-    
+
 
     background-color: #976b93;
 
@@ -108,8 +127,8 @@ color: #ffd7a7;
 
     display: flex;
     align-items: center;
-   flex-direction: row;
-   background-color: #62773a;
+    flex-direction: row;
+    background-color: #62773a;
     width: 100%;
     border: 2px solid black;
     margin-bottom: 10px;
@@ -128,7 +147,7 @@ color: #ffd7a7;
 
 .tagInfo {
 
-   margin-left: 20px;
-   font-size: 1.2rem;
-   
+    margin-left: 20px;
+    font-size: 1.2rem;
+
 }

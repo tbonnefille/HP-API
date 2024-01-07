@@ -17,8 +17,19 @@ function Home() {
 
         <div className="picHolder">
 
-        <Link className="menu" to="/gryffindor"> <div className="crestPic"> <img src={gryf1} className="housePic" alt="Logo" /></div></Link>
-        <Link className="menu" to="/slytherin"><div className="crestPic"> <img src={sly1} className="housePic" alt="Logo" /></div></Link>
+
+
+          <Link className="menu" to="/gryffindor">
+            <div className="crestPic"> <img src={gryf1} className="housePic" alt="Logo" /></div>
+            <div>gryffindor</div>
+          </Link>
+
+
+
+          <Link className="menu" to="/slytherin">
+            <div className="crestPic"> <img src={sly1} className="housePic" alt="Logo" /></div>
+            <div>slytherin</div>
+          </Link>
 
         </div>
 
@@ -36,8 +47,14 @@ function Home() {
 
         <div className="picHolder">
 
-        <Link className="menu" to="/ravenclaw">  <div className="crestPic"> <img src={raven} className="housePic" alt="Logo" /></div></Link>
-        <Link className="menu" to="/hufflepuff"><div className="crestPic"><img src={huff} className="housePic" alt="Logo" /></div></Link>
+          <Link className="menu" to="/ravenclaw">
+            <div className="crestPic"> <img src={raven} className="housePic" alt="Logo" /></div>
+            <div>ravenclaw</div>
+          </Link>
+          <Link className="menu" to="/hufflepuff">
+            <div className="crestPic"><img src={huff} className="housePic" alt="Logo" /></div>
+            <div>hufflepuff</div>
+          </Link>
 
         </div>
 

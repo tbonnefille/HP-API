@@ -10,3 +10,55 @@
     border-bottom: 1px solid aliceblue;
 
 }
+
+.Nav a.active {
+    text-decoration: underline
+    
+      }
+
+.menu {
+
+    transition: all .1s ease-in-out;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.menu:hover {
+
+    transform: scale(1.075);
+    background: rgba(255, 255, 255, .06);
+    border-radius: 10px;
+}
+
+
+
+.gryLink:hover {
+
+    color:#ae0001 ;
+    
+}
+
+
+.slyLink:hover {
+
+    color:#2a623d ;
+}
+
+.hufLink:hover {
+
+    color:#f0c75e ;
+}
+
+.ravLink:hover {
+
+    color:#222f5b ;
+}
+
+.speLink:hover {
+
+    color:#976b93 ;
+}
