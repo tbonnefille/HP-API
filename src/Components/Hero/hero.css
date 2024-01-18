@@ -2,8 +2,7 @@
 .Hero{
 
 color: snow;
-
-background-image: url("../../Assets/salle-de-classe.jpg");
+background-image: url("../../Assets/salle-de-classe.webp");
 background-position: center;
 background-repeat: no-repeat;
 height: 500px;
@@ -13,5 +12,20 @@ align-items: center;
 font-size: 4rem;
 border-bottom: 1px solid aliceblue;
 font-family: 'Harry Potter', sans-serif;
+text-align:center ;
                                                 
 }
+
+
+
+
+
+@media all and (max-width: 640px) {
+
+    .Hero{
+
+        font-size:3rem ;
+    }
+
+}    
+    

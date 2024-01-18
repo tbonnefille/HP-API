@@ -29,9 +29,9 @@
 .bioPic img {
 
     object-fit: cover;
-    
-   height: 350px;
-   
+
+    height: 350px;
+
 }
 
 .characterName {
@@ -51,7 +51,6 @@
 
 .modal {
 
-
     height: 100vh;
     width: 100%;
     display: flex;
@@ -62,6 +61,8 @@
     left: 0;
     background-color: rgb(1, 1, 1, 0.7);
 
+
+
 }
 
 .bio {
@@ -69,12 +70,10 @@
     display: flex;
     justify-content: space-around;
     background-color: #022545;
-
-
+    padding: 20px;
+    align-items: center;
     color: black;
     border: 5px solid #966F33;
-    height: 550px;
-
     width: 70%;
 }
 
@@ -86,7 +85,7 @@
     align-items: center;
     color: aliceblue;
     flex-direction: column;
-   
+
 
 }
 
@@ -95,11 +94,11 @@
 
 .bioPic {
 
-    
+
     border: 15px ridge #966F33;
-   height: 350px;
-   
-    
+    height: 350px;
+
+
 }
 
 
@@ -110,13 +109,9 @@
     flex-direction: column;
     color: #ffd7a7;
     align-items: center;
-
     padding: 10px;
-
     border: thick double;
     margin: 10px;
-
-
     background-color: #976b93;
 
 
@@ -134,9 +129,6 @@
     margin-bottom: 10px;
 }
 
-
-
-
 .tag {
 
     background-color: #3a1700;
@@ -149,5 +141,69 @@
 
     margin-left: 20px;
     font-size: 1.2rem;
+
+}
+
+
+
+
+
+@media all and (min-width: 641px) and (max-width: 810px) {
+
+    .modal {
+
+        align-items: start;
+        margin-top: 10%;
+
+    }
+
+
+    .bio {
+
+        width: 90%;
+
+    }
+
+
+}
+
+
+
+@media all and (max-width: 640px) {
+
+
+    .bio {
+
+        width: 80%;
+        margin-top: 10%;
+        flex-direction: column;
+
+
+    }
+
+    .bioPicHolder {
+
+        display: none;
+
+    }
+
+
+
+    .tag {
+
+        width: 50%;
+        font-size: 1rem;
+
+    }
+
+    .tagInfo {
+
+        margin-left: 10px;
+        font-size: 1rem;
+
+    }
+
+
+
 
 }

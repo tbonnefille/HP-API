@@ -13,7 +13,7 @@ function Nav() {
             <NavLink className="menu hufLink" to="/hufflepuff">Hufflepuff</NavLink>
             <NavLink className="menu ravLink" to="/ravenclaw">Ravenclaw</NavLink>
             <NavLink className="menu speLink" to="/spells">Spells</NavLink>
-            HARRY POTTER
+           <div className="harry"> HARRY POTTER</div>
             <NavLink className="menu" to="/">Home</NavLink>
 
         </div>

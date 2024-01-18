@@ -1,6 +1,6 @@
 .App {
 
-  background-color: rgb(58, 54, 54);
+  background-color: #121212;
   font-family: 'Wizard World', sans-serif;
                                                 
                                                 
@@ -12,7 +12,17 @@ a {
   color: aliceblue;
 }
 
-h1, h2 {
+h1, h2, h3 {
 
   text-decoration: underline;
+  color: rgba(255, 255, 255, .87);
+  text-align: center;
+}
+
+
+p {
+
+  color: rgba(255, 255, 255, .60);
+  text-align: center;
+
 }

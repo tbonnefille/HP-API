@@ -3,18 +3,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: aliceblue;
-    height: 50px;
+    background: #121212;
     font-size: 1.5rem;
     border-top: 1px solid aliceblue;
     border-bottom: 1px solid aliceblue;
+    color: rgba(255, 255, 255, .87);
 
 }
 
 .Nav a.active {
-    text-decoration: underline
-    
-      }
+    text-decoration: underline;
+}
 
 .menu {
 
@@ -29,8 +28,8 @@
 
 .menu:hover {
 
-    transform: scale(1.075);
-    background: rgba(255, 255, 255, .06);
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, .16);
     border-radius: 10px;
 }
 
@@ -38,27 +37,67 @@
 
 .gryLink:hover {
 
-    color:#ae0001 ;
-    
+    color: #ae0001;
+
 }
 
 
 .slyLink:hover {
 
-    color:#2a623d ;
+    color: #2a623d;
 }
 
 .hufLink:hover {
 
-    color:#f0c75e ;
+    color: #f0c75e;
 }
 
 .ravLink:hover {
 
-    color:#222f5b ;
+    color: #222f5b;
 }
 
 .speLink:hover {
 
-    color:#976b93 ;
+    color: #976b93;
+}
+
+
+
+
+@media all and (min-width: 641px) and (max-width: 810px) {
+
+
+    .Nav {
+
+        font-size: 1.25rem;
+    }
+
+    .harry {
+
+        display: none;
+    }
+
+
+
+}
+
+
+
+@media all and (max-width: 640px) {
+
+    .Nav {
+
+        flex-direction: column;
+    }
+
+
+    .harry {
+
+        display: none;
+    }
+
+
+
+
 }

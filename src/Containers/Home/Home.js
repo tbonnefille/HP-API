@@ -1,10 +1,11 @@
 import "./home.css";
+
 import { Link } from "react-router-dom";
 
-import gryf1 from '../../Assets/gryf1.png';
-import sly1 from '../../Assets/sly1.png';
-import raven from '../../Assets/raven.png';
-import huff from '../../Assets/huff.png';
+import gryf1 from '../../Assets/gryf1_1.webp';
+import sly1 from '../../Assets/sly1.webp';
+import raven from '../../Assets/raven.webp';
+import huff from '../../Assets/huff_1.webp';
 
 function Home() {
 
@@ -17,42 +18,53 @@ function Home() {
 
         <div className="picHolder">
 
-
-
           <Link className="menu" to="/gryffindor">
-            <div className="crestPic"> <img src={gryf1} className="housePic" alt="Logo" /></div>
+            <div className="crestPic"> <img src={gryf1} className="housePic" alt=" house gryffindor" /></div>
             <div>gryffindor</div>
           </Link>
 
-
-
           <Link className="menu" to="/slytherin">
-            <div className="crestPic"> <img src={sly1} className="housePic" alt="Logo" /></div>
+            <div className="crestPic"> <img src={sly1} className="housePic" alt=" house slytherin" /></div>
             <div>slytherin</div>
           </Link>
 
         </div>
 
         <div className="presentation">
+
           <h1>Home</h1>
 
-          <p> Comme vous le savez, ce vendredi 14 avril, le Conseil constitutionnel a validé pour l’essentiel la loi sur nos retraites, et je l’ai donc logiquement promulguée. Les évolutions prévues par cette loi entreront en vigueur progressivement à partir de cet automne.
+          <h2>Présentation</h2>
+
+          <p> A la suite d’une lettre qui l’invite à l’école des sorciers, le destin du jeune Harry Potter change. Ce jeune orphelin apprend l’amitié et la magie dans la prestigieuse mais inquiétante école de Poudlard. Au cours de ses aventures, il découvre l’origine de sa cicatrice en forme d’éclair sur le front, découvrant qui étaient ses parents, les circonstances et de leur décès et leur héritage laissé à Harry : la cape d’invisibilité. Cette relique familiale attire le sorcier Voldemort qui cherche à rassembler les reliques qui lui permettront  d’atteindre le plus haut degré de puissance : l’immortalité. Harry et ses amis doivent stopper ce mage assoiffé de puissance et son armée malfaisante en retrouvant avant lui les objets qui conservent les parties de son âme noire... et ils comprennent qu'Harry lui-même constitue la dernière pièce manquante.  La saga s’étend sur 7 livres et 8 films où les thèmes de la famille, de l’amour et de la mort s’entrelacent. Dans ce site vous entrerez dans le merveilleux et sombre de l’univers d’Harry Potter.
           </p>
 
+          <h2>Les maisons (Houses)</h2>
+
+          <h3>Gryffondor (GRYFFINDOR)</h3>
           <p>
-            Adoptés conformément à ce que prévoit notre Constitution, ces changements étaient nécessaires, pour garantir la retraite de chacun et pour produire plus de richesses pour notre nation. Car en effet alors que le nombre de retraités augmente, que notre espérance de vie s’allonge, la réponse ne pouvait pas être de baisser les pensions, elle ne pouvait pas être non plus d’augmenter les cotisations de ceux qui travaillent, elle ne pouvait pas être comme je l’ai beaucoup entendu, de ne rien faire, car c’était lors laisser les déficits s’accumuler et notre dette augmenter pour les générations futures.
+            la maison des courageux, aventuriers, des jeunes loyaux mais audacieux qui contournent parfois les règlements pour accomplir une bonne chose !
           </p>
+
+          <h3>Serdaigle (RAVENCLAW)</h3>
+          <p>la maison de ceux qui sont perspicaces, des entreprenants créatifs aux idées originales.</p>
+
+          <h3>Serpentard (SLTTHERIN)</h3>
+          <p>ses membres sont très attachés à la noblesse, ce sont d’ingénieux leaders ambitieux et fiers.</p>
+          <h3>Poufsouffle (HUFFLEPUFF)</h3>
+          <p>ils sont loyaux, c’est la maison du bienfaiteur désintéressé. De fidèles amis enthousiastes et optimistes.</p>
 
         </div>
 
         <div className="picHolder">
 
           <Link className="menu" to="/ravenclaw">
-            <div className="crestPic"> <img src={raven} className="housePic" alt="Logo" /></div>
+            <div className="crestPic"> <img src={raven} className="housePic" alt=" house ravenclaw" /></div>
             <div>ravenclaw</div>
           </Link>
+
           <Link className="menu" to="/hufflepuff">
-            <div className="crestPic"><img src={huff} className="housePic" alt="Logo" /></div>
+            <div className="crestPic"><img src={huff} className="housePic" alt=" house hufflepuff" /></div>
             <div>hufflepuff</div>
           </Link>
 
