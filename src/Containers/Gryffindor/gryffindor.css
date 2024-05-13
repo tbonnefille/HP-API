@@ -1,12 +1,15 @@
-
 .Gryffindor {
 
-    color:#eeba30;
+    color: #eeba30;
     font-weight: 900;
     text-align: center;
     background-color: #740001;
     border: ridge 15px #d3a625;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .houseName {
@@ -32,12 +35,52 @@
 }
 
 
+.paginationBttns {
+
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #ffd7a7;
+    color: #ffd7a7;
+    background-color: #3a1700;
+    cursor: pointer;
+}
+
+.paginationBttns a:hover {
+    color: white;
+    background-color: #976b93;
+}
+
+.paginationActive a {
+    color: #3a1700;
+    background-color: #976b93;
+}
+
+.paginationDisabled a {
+    color: #3a1700;
+    background-color: #62773a;
+}
+
+
+
+
 @media all and (max-width: 640px) {
 
     .houseName {
 
         font-size: 2rem;
-       
+
     }
 
 

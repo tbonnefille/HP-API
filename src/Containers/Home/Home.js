@@ -41,17 +41,19 @@ function Home() {
 
           <h2>Les maisons (Houses)</h2>
 
-          <h3>Gryffondor (GRYFFINDOR)</h3>
+          <Link to= "/gryffindor"><h3>Gryffondor (GRYFFINDOR)</h3></Link>
+         
           <p>
             la maison des courageux, aventuriers, des jeunes loyaux mais audacieux qui contournent parfois les règlements pour accomplir une bonne chose !
           </p>
 
-          <h3>Serdaigle (RAVENCLAW)</h3>
+          <Link to= "/ravenclaw"><h3>Serdaigle (RAVENCLAW)</h3></Link>
           <p>la maison de ceux qui sont perspicaces, des entreprenants créatifs aux idées originales.</p>
 
-          <h3>Serpentard (SLTTHERIN)</h3>
+          <Link to= "/slytherin"><h3>Serpentard (SLYTHERIN)</h3></Link>
           <p>ses membres sont très attachés à la noblesse, ce sont d’ingénieux leaders ambitieux et fiers.</p>
-          <h3>Poufsouffle (HUFFLEPUFF)</h3>
+
+          <Link to= "/hufflepuff"><h3>Poufsouffle (HUFFLEPUFF)</h3></Link>
           <p>ils sont loyaux, c’est la maison du bienfaiteur désintéressé. De fidèles amis enthousiastes et optimistes.</p>
 
         </div>

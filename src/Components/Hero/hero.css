@@ -16,7 +16,17 @@ text-align:center ;
                                                 
 }
 
+@media all and (max-width: 1024px) {
 
+    .Hero{
+
+        font-size:4rem ;
+        height: 275px;
+    }
+
+
+
+}
 
 
 
@@ -25,6 +35,7 @@ text-align:center ;
     .Hero{
 
         font-size:3rem ;
+        height: 350px;
     }
 
 }    

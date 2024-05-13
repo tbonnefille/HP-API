@@ -6,6 +6,9 @@
     background-color: #1a472a;
     border: ridge 15px #aaaaaa;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 

@@ -8,7 +8,7 @@
     color: #ffd7a7;
     flex-direction: column;
     background-color: #976b93;
-    border: double thick 	#ffd7a7;
+    border: double thick #ffd7a7;
     margin: 10px;
 
 
@@ -35,7 +35,7 @@
     height: 100px;
     overflow: auto;
     padding-top: 5px;
-    
+
 }
 
 
@@ -51,7 +51,7 @@
 .spellPic {
 
     object-fit: cover;
- height: 120px;
+    height: 120px;
 
 
 }

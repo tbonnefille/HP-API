@@ -5,4 +5,7 @@
     background-color: #0e1a40;
     border: ridge 15px #bebebe;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
