@@ -8,9 +8,9 @@ function Hero() {
 
   return (
     <div className="Hero" >
-  HARRY POTTER DATABASE
-  </div>
-);
+      HARRY POTTER DATABASE
+    </div>
+  );
 }
 
 export default Hero;

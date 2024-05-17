@@ -25,7 +25,7 @@ function Spells() {
 
   const [pageNumber, setPageNumber] = useState(0);
 
-  const spellsPerPage = 20;
+  const spellsPerPage = 15;
   const pagesVisited = pageNumber * spellsPerPage;
 
   const displaySpells = data

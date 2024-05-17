@@ -9,9 +9,9 @@ height: 500px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 4rem;
+font-family: 'Wizard World', sans-serif;
+font-size: 5rem;
 border-bottom: 1px solid aliceblue;
-font-family: 'Harry Potter', sans-serif;
 text-align:center ;
                                                 
 }
